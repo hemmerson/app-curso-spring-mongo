@@ -47,4 +47,12 @@ public class ProfessorResource {
         service.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Void> insert(@RequestBody ProfessorDTO objDto, @PathVariable String id){
+        Professor obj = service.fromDto(objDto);
+        obj.setNumero_prof(id);
+        obj = service.update(obj);
+        return ResponseEntity.noContent().build();
+    }
 }
