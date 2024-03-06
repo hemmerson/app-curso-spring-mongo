@@ -1,8 +1,10 @@
 package com.hemmersonrosa.appcursospringmongo.config;
 
 import com.hemmersonrosa.appcursospringmongo.domains.Aluno;
+import com.hemmersonrosa.appcursospringmongo.domains.Disciplina;
 import com.hemmersonrosa.appcursospringmongo.domains.Professor;
 import com.hemmersonrosa.appcursospringmongo.repositories.AlunoRepository;
+import com.hemmersonrosa.appcursospringmongo.repositories.DisciplinaRepository;
 import com.hemmersonrosa.appcursospringmongo.repositories.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -18,6 +20,9 @@ public class Instantiation implements CommandLineRunner {
 
     @Autowired
     private AlunoRepository alunoRepository;
+
+    @Autowired
+    private DisciplinaRepository disciplinaRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -39,6 +44,15 @@ public class Instantiation implements CommandLineRunner {
         Aluno clara = new Aluno( "Joana","120","Qualquer");
         Aluno miguel = new Aluno( "Pedro","120","Qualquer");
         alunoRepository.saveAll(Arrays.asList(jose, cris, clara, miguel));
+
+        // Disciplina ==================================================================================
+        disciplinaRepository.deleteAll();
+
+        Disciplina portugues = new Disciplina( "Português","Ensino Médio",4);
+        Disciplina biologia = new Disciplina( "Biologia","Ensino Médio",2);
+        Disciplina historia = new Disciplina( "História","Ensino Médio",2);
+        Disciplina matematica = new Disciplina( "Matemática","Ensino Médio",4);
+        disciplinaRepository.saveAll(Arrays.asList(portugues, biologia, historia, matematica));
 
     }
 }
