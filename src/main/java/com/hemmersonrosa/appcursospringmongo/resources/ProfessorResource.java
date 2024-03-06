@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/professors")
+@RequestMapping("/professores")
 public class ProfessorResource {
 
     @Autowired
