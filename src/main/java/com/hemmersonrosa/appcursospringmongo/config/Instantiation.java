@@ -1,13 +1,7 @@
 package com.hemmersonrosa.appcursospringmongo.config;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Aluno;
-import com.hemmersonrosa.appcursospringmongo.domains.Disciplina;
-import com.hemmersonrosa.appcursospringmongo.domains.Matricula;
-import com.hemmersonrosa.appcursospringmongo.domains.Professor;
-import com.hemmersonrosa.appcursospringmongo.repositories.AlunoRepository;
-import com.hemmersonrosa.appcursospringmongo.repositories.DisciplinaRepository;
-import com.hemmersonrosa.appcursospringmongo.repositories.MatriculaRepository;
-import com.hemmersonrosa.appcursospringmongo.repositories.ProfessorRepository;
+import com.hemmersonrosa.appcursospringmongo.domains.*;
+import com.hemmersonrosa.appcursospringmongo.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -28,6 +22,9 @@ public class Instantiation implements CommandLineRunner {
 
     @Autowired
     private MatriculaRepository matriculaRepository;
+
+    @Autowired
+    private ProfDiscRepository profDiscRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -67,6 +64,15 @@ public class Instantiation implements CommandLineRunner {
         Matricula matricula3 = new Matricula( jose,matematica,2024);
         Matricula matricula4 = new Matricula( miguel,biologia,2023);
         matriculaRepository.saveAll(Arrays.asList(matricula1, matricula2, matricula3, matricula4));
+
+        // ProfDisc ===================================================================================
+        profDiscRepository.deleteAll();
+
+        ProfDisc profDisc1 = new ProfDisc( thiago,portugues,2024);
+        ProfDisc profDisc2 = new ProfDisc( maria,historia,2023);
+        ProfDisc profDisc3 = new ProfDisc( pedro,matematica,2024);
+        ProfDisc profDisc4 = new ProfDisc( joana,biologia,2023);
+        profDiscRepository.saveAll(Arrays.asList(profDisc1, profDisc2, profDisc3, profDisc4));
 
     }
 }
