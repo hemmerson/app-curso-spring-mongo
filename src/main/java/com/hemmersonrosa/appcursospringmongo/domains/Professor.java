@@ -1,9 +1,15 @@
-package com.hemmersonrosa.appcursospringmongo.domain;
+package com.hemmersonrosa.appcursospringmongo.domains;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 import java.util.Objects;
 
+@Document
 public class Professor implements Serializable {
+
+    @Id
     private String numero_prof;
     private String profnome;
     private String profrua;

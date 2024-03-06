@@ -1,6 +1,8 @@
-package com.hemmersonrosa.appcursospringmongo.resource;
+package com.hemmersonrosa.appcursospringmongo.resources;
 
-import com.hemmersonrosa.appcursospringmongo.domain.Professor;
+import com.hemmersonrosa.appcursospringmongo.domains.Professor;
+import com.hemmersonrosa.appcursospringmongo.services.ProfessorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +16,13 @@ import java.util.List;
 @RequestMapping("/professors")
 public class ProfessorResource {
 
+    @Autowired
+    private ProfessorService service;
+
     @GetMapping
     public ResponseEntity<List<Professor>> findAll(){
-        Professor maria =  new Professor("1","Maria","Rua qualquer", "Cidade Qualquer");
-        Professor alex =  new Professor("2","Alex","Rua qualquer", "Cidade Qualquer");
-        List<Professor> list = new ArrayList<>();
-        list.addAll(Arrays.asList(maria,alex));
+
+        List<Professor> list = service.findAll();
         return ResponseEntity.ok().body(list);
     }
 }
