@@ -29,6 +29,11 @@ public class ProfessorService {
         return repository.insert(obj);
     }
 
+    public void delete(String id) {
+        findById(id);
+        repository.deleteById(id);
+    }
+
     public Professor fromDto(ProfessorDTO objDto){
         return new Professor(objDto.getNumero_prof(), objDto.getProfnome(), objDto.getProfrua(), objDto.getProfcidade());
     }
