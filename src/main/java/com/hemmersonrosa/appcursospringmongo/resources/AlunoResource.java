@@ -53,4 +53,8 @@ public class AlunoResource {
         obj = service.update(obj);
         return ResponseEntity.noContent().build();
     }
+
+    public void teste(){
+        
+    }
 }
