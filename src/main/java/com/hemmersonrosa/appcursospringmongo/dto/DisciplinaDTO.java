@@ -1,7 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.dto;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Aluno;
-import com.hemmersonrosa.appcursospringmongo.domains.Disciplina;
+import com.hemmersonrosa.appcursospringmongo.models.Disciplina;
 
 import java.io.Serializable;
 

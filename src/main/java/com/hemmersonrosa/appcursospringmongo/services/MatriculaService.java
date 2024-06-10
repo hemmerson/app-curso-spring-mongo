@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.services;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Matricula;
+import com.hemmersonrosa.appcursospringmongo.models.Matricula;
 import com.hemmersonrosa.appcursospringmongo.repositories.MatriculaRepository;
 import com.hemmersonrosa.appcursospringmongo.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

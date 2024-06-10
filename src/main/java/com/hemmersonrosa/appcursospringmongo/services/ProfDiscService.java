@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.services;
 
-import com.hemmersonrosa.appcursospringmongo.domains.ProfDisc;
+import com.hemmersonrosa.appcursospringmongo.models.ProfDisc;
 import com.hemmersonrosa.appcursospringmongo.repositories.ProfDiscRepository;
 import com.hemmersonrosa.appcursospringmongo.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

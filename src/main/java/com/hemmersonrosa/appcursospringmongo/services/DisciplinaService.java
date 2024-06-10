@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.services;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Disciplina;
+import com.hemmersonrosa.appcursospringmongo.models.Disciplina;
 import com.hemmersonrosa.appcursospringmongo.dto.DisciplinaDTO;
 import com.hemmersonrosa.appcursospringmongo.repositories.DisciplinaRepository;
 import com.hemmersonrosa.appcursospringmongo.services.exception.ObjectNotFoundException;

@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.repositories;
 
-import com.hemmersonrosa.appcursospringmongo.domains.ProfDisc;
+import com.hemmersonrosa.appcursospringmongo.models.ProfDisc;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.resources;
 
-import com.hemmersonrosa.appcursospringmongo.domains.ProfDisc;
+import com.hemmersonrosa.appcursospringmongo.models.ProfDisc;
 import com.hemmersonrosa.appcursospringmongo.services.ProfDiscService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

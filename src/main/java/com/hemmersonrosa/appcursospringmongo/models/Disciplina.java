@@ -1,10 +1,9 @@
-package com.hemmersonrosa.appcursospringmongo.domains;
+package com.hemmersonrosa.appcursospringmongo.models;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor

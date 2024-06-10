@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.config;
 
-import com.hemmersonrosa.appcursospringmongo.domains.*;
+import com.hemmersonrosa.appcursospringmongo.models.*;
 import com.hemmersonrosa.appcursospringmongo.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

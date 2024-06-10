@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.resources;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Aluno;
+import com.hemmersonrosa.appcursospringmongo.models.Aluno;
 import com.hemmersonrosa.appcursospringmongo.dto.AlunoDTO;
 import com.hemmersonrosa.appcursospringmongo.services.AlunoService;
 import org.springframework.beans.factory.annotation.Autowired;

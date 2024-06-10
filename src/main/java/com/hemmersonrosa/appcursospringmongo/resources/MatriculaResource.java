@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.resources;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Matricula;
+import com.hemmersonrosa.appcursospringmongo.models.Matricula;
 import com.hemmersonrosa.appcursospringmongo.services.MatriculaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

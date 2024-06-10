@@ -1,4 +1,4 @@
-package com.hemmersonrosa.appcursospringmongo.domains;
+package com.hemmersonrosa.appcursospringmongo.models;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -10,16 +10,16 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-public class Matricula implements Serializable {
+public class ProfDisc implements Serializable {
 
     @Id
     private String id;
-    private Aluno aluno;
+    private Professor professor;
     private Disciplina disciplina;
     private Integer ano;
 
-    public Matricula(Aluno aluno, Disciplina disciplina, Integer ano) {
-        this.aluno = aluno;
+    public ProfDisc(Professor professor, Disciplina disciplina, Integer ano) {
+        this.professor = professor;
         this.disciplina = disciplina;
         this.ano = ano;
     }

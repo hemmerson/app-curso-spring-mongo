@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.services;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Aluno;
+import com.hemmersonrosa.appcursospringmongo.models.Aluno;
 import com.hemmersonrosa.appcursospringmongo.dto.AlunoDTO;
 import com.hemmersonrosa.appcursospringmongo.repositories.AlunoRepository;
 import com.hemmersonrosa.appcursospringmongo.services.exception.ObjectNotFoundException;

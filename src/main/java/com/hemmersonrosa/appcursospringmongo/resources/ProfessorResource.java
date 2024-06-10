@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.resources;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Professor;
+import com.hemmersonrosa.appcursospringmongo.models.Professor;
 import com.hemmersonrosa.appcursospringmongo.dto.ProfessorDTO;
 import com.hemmersonrosa.appcursospringmongo.services.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 

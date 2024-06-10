@@ -1,4 +1,4 @@
-package com.hemmersonrosa.appcursospringmongo.domains;
+package com.hemmersonrosa.appcursospringmongo.models;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;

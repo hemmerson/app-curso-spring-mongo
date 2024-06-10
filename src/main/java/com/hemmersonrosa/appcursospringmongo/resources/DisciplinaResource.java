@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.resources;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Disciplina;
+import com.hemmersonrosa.appcursospringmongo.models.Disciplina;
 import com.hemmersonrosa.appcursospringmongo.dto.DisciplinaDTO;
 import com.hemmersonrosa.appcursospringmongo.services.DisciplinaService;
 import org.springframework.beans.factory.annotation.Autowired;

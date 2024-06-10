@@ -1,6 +1,6 @@
 package com.hemmersonrosa.appcursospringmongo.dto;
 
-import com.hemmersonrosa.appcursospringmongo.domains.Professor;
+import com.hemmersonrosa.appcursospringmongo.models.Professor;
 
 import java.io.Serializable;
 
